@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#myCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.carousel-inner {
+    box-sizing: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    display: flex;
+}
+
+.item {
+    display: flex;
+    transition: 0.5s;
+    transform: translateX(0);
+}
+
+img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
